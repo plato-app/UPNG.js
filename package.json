@@ -1,7 +1,13 @@
 {
-  "name": "upng-js",
-  "description": "Small, fast and advanced PNG / APNG encoder and decoder",
+  "name": "@plato/upng",
   "version": "2.1.0",
+  "description": "Small, fast and advanced PNG / APNG encoder and decoder",
+  "keywords": [
+    "png",
+    "apng",
+    "image",
+    "conversion"
+  ],
   "homepage": "https://github.com/photopea/UPNG.js",
   "author": "photopea (https://github.com/photopea)",
   "contributors": [
@@ -12,14 +18,15 @@
   "bugs": {
     "url": "https://github.com/photopea/UPNG.js/issues"
   },
-  "main": "UPNG",
-  "keywords": [
-    "png",
-    "apng",
-    "image",
-    "conversion"
-  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "tape 'tests/**/*-test.js'"
+  },
   "dependencies": {
     "pako": "^1.0.5"
+  },
+  "devDependencies": {
+    "tape": "^4.13.2"
   }
 }
